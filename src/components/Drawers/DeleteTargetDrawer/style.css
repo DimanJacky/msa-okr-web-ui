@@ -1,0 +1,15 @@
+h5.ant-typography, .ant-typography h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7B7B98;
+    margin-bottom: 1px;
+}
+
+.deleteTargetDrawer .ant-drawer-footer{
+    background-color: #EFEFFE;
+}
+
+.deleteTargetDrawer .ant-drawer-title {
+    font-size: 24px;
+    font-weight: normal;
+}

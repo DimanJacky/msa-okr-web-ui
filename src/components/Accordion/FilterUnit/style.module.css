@@ -1,0 +1,38 @@
+.unit_filter {
+    min-height: 104px;
+    box-shadow: inset 1px 0px 0px rgb(98 94 255 / 30%), inset 0px -1px 0px rgb(98 94 255 / 30%), inset -1px 0px 0px rgb(98 94 255 / 30%), inset 0px 1px 0px rgb(98 94 255 / 30%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unit_checkBox_list {
+    display: flex;
+    margin-left: 26.5px;
+    flex-wrap: wrap;
+}
+.unit_end_part {
+    display: flex;
+    align-items: center;
+}
+.unit_partition {
+    height: 15px;
+    width: 1px;
+    background-color: #D9D9D9; 
+    border-radius: 10px
+}
+
+@media (max-width: 576px) {
+    .unit_filter {
+        flex-flow: column;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .unit_checkBox_list {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+

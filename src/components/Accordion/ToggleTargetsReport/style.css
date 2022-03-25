@@ -1,0 +1,59 @@
+.wrapperTargetsReport .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: #625eff;
+}
+
+.wrapperTargetsReport .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active {
+  border-color: #625eff;
+}
+.wrapperTargetsReport .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]) .ant-radio-button-wrapper:first-child {
+  border-right-color: #625eff;
+}
+
+.wrapperTargetsReport .ant-radio-button-wrapper {
+  height: 40px;
+  padding-top: 4px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.wrapperTargetsReport .btnOne {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 160px;
+  border-bottom: 1.5px solid #625eff;
+  border-left: 1.5px solid #625eff;
+  border-top: 1.5px solid #625eff;
+  padding-left: 44px;
+}
+
+.wrapperTargetsReport .btnTwo {
+  width: 105px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1.5px solid #625eff;
+  border-right: 1.5px solid #625eff;
+  border-top: 1.5px solid #625eff;
+  padding-left: 45px;
+}
+
+.wrapperTargetsReport .btnOne svg {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.wrapperTargetsReport .btnTwo svg {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+}
+
+.wrapperTargetsReport svg path {
+  fill: #666;
+}
+
+.wrapperTargetsReport .ant-radio-button-wrapper-checked svg path {
+  left: 0;
+  bottom: 11px;
+  fill: white;
+}

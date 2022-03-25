@@ -1,0 +1,105 @@
+stages:
+  - build
+  - docker
+  - deploy
+
+variables:
+  APP_NAME: msa-okr-web-ui
+
+build:
+  stage: build
+  image: $DOCKER_REGISTRY_PROXY/node:12-alpine
+  cache:
+    paths:
+      - node_modules/
+      - .next/
+  script:
+    - unset CI
+    - npm i
+    - npm run build
+  artifacts:
+    paths:
+      - build
+    expire_in: 1 day
+
+docker:
+  stage: docker
+  image: $DOCKER_REGISTRY_PROXY/docker:dind
+  before_script:
+    - until docker info; do sleep 1; done
+  script:
+    - docker build . -t $APP_NAME
+    - docker tag $APP_NAME $DOCKER_REGISTRY/okr/$APP_NAME:latest
+    - docker tag $APP_NAME $DOCKER_REGISTRY/okr/$APP_NAME:$CI_COMMIT_REF_SLUG
+    - docker tag $APP_NAME $DOCKER_REGISTRY/okr/$APP_NAME:sha$CI_COMMIT_SHORT_SHA
+    - docker login $DOCKER_REGISTRY --username gitlab --password $DOCKER_REGISTRY_PASSWORD
+    - docker push --all-tags $DOCKER_REGISTRY/okr/$APP_NAME
+  dependencies:
+    - build
+
+.deploy:
+  variables:
+    GIT_STRATEGY: none
+  image: $DOCKER_REGISTRY_PROXY/bitnami/kubectl:latest
+  script:
+    - kubectl -n $NAMESPACE set image deployments/$APP_NAME $APP_NAME=$DOCKER_REGISTRY/okr/$APP_NAME:sha$CI_COMMIT_SHORT_SHA
+  when: manual
+
+deploy dev1:
+  stage: deploy
+  extends:
+    - .deploy
+  variables:
+    NAMESPACE: okr
+
+deploy dev2:
+  stage: deploy
+  extends:
+    - .deploy
+  variables:
+    NAMESPACE: okr-dev2
+
+deploy dev3:
+  stage: deploy
+  extends:
+    - .deploy
+  variables:
+    NAMESPACE: okr-dev3
+
+deploy dev4:
+  stage: deploy
+  extends:
+    - .deploy
+  variables:
+    NAMESPACE: okr-dev4
+
+deploy prod:
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+    TAG: sha$CI_COMMIT_SHORT_SHA
+    GIT_SSH_COMMAND: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /tmp/id_rsa
+    VERSION_KEY: msaokrwebui
+  image: $DOCKER_REGISTRY_PROXY/argocd-deployer-image:v4
+  before_script:
+    - echo $GITLAB_ID_RSA | base64 -d > /tmp/id_rsa
+    - chmod 400 /tmp/id_rsa
+    - argocd login "$ARGOCD_SERVER" --username="$ARGOCD_USERNAME" --password="$ARGOCD_PASSWORD"
+  script:
+    - git clone git@neogit.neoflex.ru:neo-projects/iac/helm-infra.git
+    - cd helm-infra/cluster
+    - yq -yi ".images.$VERSION_KEY|=\"${TAG}\"" values.yaml
+    - git add values.yaml
+    - git commit -m "Bump $CI_PROJECT_NAME version to ${TAG}" || true
+    - git push
+    - argocd app sync cluster --revision HEAD --force --grpc-web
+    - argocd app wait cluster --health --grpc-web
+    - argocd app sync $CI_PROJECT_NAME-prod --revision HEAD --force --grpc-web
+    - argocd app wait $CI_PROJECT_NAME-prod --health --grpc-web
+  environment: prod
+  when: manual
+  only:
+    refs:
+      - branches
+    variables:
+      - $CI_COMMIT_REF_PROTECTED

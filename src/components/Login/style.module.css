@@ -1,0 +1,8 @@
+.buttonColor {
+  background-color: #EFEFFE;
+  color: #000;
+  border: 1px solid #625EFF;
+}
+.buttonColor:hover {
+  background-color: #625EFF;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);}

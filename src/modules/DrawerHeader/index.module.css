@@ -1,0 +1,46 @@
+.drawerHeader {
+    width: 100%;
+    padding: 12px 24px 24px 24px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.drawerHeaderDraft {
+    border-top: 8px solid #4696EC;
+}
+
+.drawerHeaderReview {
+    border-top: 8px solid #F5B53F;
+}
+
+.drawerHeaderRejected {
+    border-top: 8px solid #D63964;
+}
+
+.drawerHeaderActive {
+    border-top: 8px solid #4CAF50;
+}
+
+.drawerHeaderOutdate {
+    border-top: 8px solid #607D8B;
+}
+
+.drawerHeaderDeleted {
+    border-top: 8px solid #979797;
+}
+
+.textStatusWrapper {
+    margin-bottom: 3px;
+}
+
+.title {
+    margin: 0;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.iconsWrapper {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    display: flex;
+}

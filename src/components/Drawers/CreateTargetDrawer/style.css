@@ -1,0 +1,37 @@
+.btn_save {
+    border-radius: 10px;
+    border-color: #625EFF;
+    color: white;
+    background-color: #625EFF;
+}
+
+.btn_save:hover, .btn_save:focus {
+    background-color: #4B36CA;
+    color: white;
+}
+
+.btn_clear {
+    border-radius: 10px;
+    border-color: #625EFF;
+    color: #625EFF;
+}
+
+.btn_clear:hover, .btn_clear:focus {
+    color: white;
+    border-color: #4B36CA;
+}
+
+.btn_disabled{
+    border-radius: 10px;
+}
+
+.select-wrapper .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 1px solid #CACDDD;
+    border-radius: 10px;
+    padding: 3px 11px;
+}
+
+.createTarget .ant-drawer-title {
+    font-size: 24px;
+    font-weight: normal;
+}

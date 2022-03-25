@@ -1,0 +1,25 @@
+.icon_minus {
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.icon_plus {
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.text_column_drawer {
+    display: flex;
+    flex-direction: column;
+}
+
+.text_column_drawer h3 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.styleActivityTitle h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+}

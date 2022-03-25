@@ -1,0 +1,141 @@
+.navbar {
+  background-color: #4D4A5B;
+  display: flex;
+  min-height: 60px;
+  padding: 0 56px 0 46px;
+}
+
+.logo {
+  width: 114px;
+  display: flex;
+  margin-right: 60px;
+}
+
+.navbar_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_nav {
+  width: 615px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main_nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all .25s;
+  color: white;
+  padding: 0 9px;
+  margin: 0 13px;
+  height: 100%;
+}
+
+.main_nav a:hover {
+  color: #EAA529;
+}
+
+.main_nav a:hover::before {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: #EAA529;
+  border-radius: 5px;
+}
+
+.right_block {
+  min-width: 412px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons_block a:first-child img {
+  padding-right: 20px;
+}
+
+.btn_language {
+  position: relative;
+}
+
+.btn_language::before {
+  content: "";
+  height: 30px;
+  width: 1px;
+  left: -19px;
+  top: -5px;
+  background-color: #646270;
+  position: absolute;
+}
+
+.chevron_down {
+  position: absolute;
+  top: 3px;
+  left: 22px;
+  cursor: pointer;
+}
+
+.btn_language {
+  margin-right: 20px;
+}
+
+.btn_language,
+.profile_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+@media (max-width: 1058px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .navbar_wrapper {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 15px;
+  }
+
+  .navbar_wrapper {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .main_nav {
+    margin: 10px 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .main_nav {
+    flex-flow: column;
+  }
+
+  .main_nav a {
+    margin-bottom: 10px;
+  }
+}

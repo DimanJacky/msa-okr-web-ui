@@ -1,0 +1,62 @@
+.site_card_wrapper {
+  padding: 30px;
+  background: #FAFAFA;
+}
+
+.page_name {
+  margin-bottom: 35px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  color: #333333;
+}
+
+.search_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  margin: 0 0 32px 0;
+  align-items: center;
+  padding: 0 0 0 12px;
+  width: 830px;
+  height: 40px;
+}
+
+.site_card {
+  height: 88px;
+  background: #fff;
+  padding: 24px 24px 40px 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.name_division {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.name_of_the_head {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.date_of_changed {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}

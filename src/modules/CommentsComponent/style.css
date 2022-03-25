@@ -1,0 +1,89 @@
+.ant-tabs-tab:hover {
+  color: #625EFF;
+}
+.ant-tabs-tab {
+  color: #333;
+  font-weight: lighter;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: normal;
+  color: #625EFF;
+}
+
+.ant-tabs-ink-bar{
+  background: #625EFF;
+}
+
+.comments_wrapper {
+  margin-top: 20px;
+}
+
+.comments_wrapper .ant-list-item {
+  position: relative;
+  padding: 12px 12px 25px 28px;
+}
+
+.comments_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments_icon {
+  color: #a1a1b4;
+}
+
+.comments_wrapper .date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #B3B3B3;
+}
+
+.comments_wrapper .anticon-comment {
+  color: #625EFF;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.comments_wrapper .translatedStatus {
+  position: absolute;
+  bottom: -12px;
+  padding-bottom: 0;
+  color: #8C8C8C;
+}
+
+.comments_wrapper .ant-list-item-meta-title {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.comments_wrapper .commentStatusStyle {
+  position: relative;
+  color: #42436C;
+  margin-left: 20px;
+}
+
+.comments_wrapper .commentStatusStyle img {
+  left: -14px;
+  top: 4px;
+  position: absolute;
+}
+
+.comments_wrapper .ant-list-item-meta-description {
+  color: #666666;
+}
+
+.comments_wrapper .IconChat {
+  position: absolute;
+  left: -2px;
+  top: 15px;
+}
+
+.comments_wrapper .IconChevronUpStyle {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  cursor: pointer;
+}

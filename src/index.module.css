@@ -1,0 +1,4 @@
+.contentWrapper {
+    min-height: calc(100vh - 390px);
+    margin-bottom: 110px;
+}

@@ -1,0 +1,19 @@
+.btn_save, .btn_clear {
+    border-radius: 10px;
+    border-color: #625EFF;
+    color: white;
+}
+
+.btn_save:hover, .btn_save:focus {
+    color: white;
+}
+
+.ant-drawer-footer{
+    display: flex;
+    background-color: #EFEFFE;
+}
+
+.editingKeyresult .ant-drawer-title {
+    font-weight: normal;
+    font-size: 24px;
+}

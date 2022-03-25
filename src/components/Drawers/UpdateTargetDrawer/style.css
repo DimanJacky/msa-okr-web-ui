@@ -1,0 +1,39 @@
+.btn_save, .btn_clear {
+    border-radius: 10px;
+    border-color: #625EFF;
+}
+
+.btn_clear{
+    color: #625EFF;
+}
+
+.btn_save:hover {
+    background-color: #4B36CA;
+    color: white;
+}
+
+.btn_clear:hover {
+    color: #4B36CA;
+    border-color: #4B36CA;
+}
+
+.btn_save:focus {
+    border-color: #4B36CA;
+    color: white;
+    box-shadow: 0px 0px 6px rgba(98, 94, 255, 0.8);
+}
+
+.btn_clear:focus {
+    color: #4B36CA;
+    border-color: #4B36CA;
+    box-shadow: 0px 0px 6px rgba(98, 94, 255, 0.8);
+}
+
+.ant-form-item-label > label {
+    color: #6F6F8B;
+}
+
+.editingAgoal .ant-drawer-title {
+    font-size: 24px;
+    font-weight: normal;
+}

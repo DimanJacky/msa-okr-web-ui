@@ -1,0 +1,38 @@
+.checkbox-drawer {
+    font-size: 16px !important;
+    color: #625EFF;
+}
+
+.checkbox-drawer .ant-checkbox-inner {
+    margin-top: -14px;
+    border-color: #B3B3B3;
+    width: 12px;
+    height: 12px;
+}
+
+.checkboxDrawerFilter .ant-checkbox-inner {
+    border-color: #B3B3B3;
+    width: 12px;
+    height: 12px;
+}
+
+.checkboxDrawerFilter .ant-checkbox-checked .ant-checkbox-inner::after {
+    transform: rotate(45deg) scale(0.8) translate(-80%, -50%);
+}
+
+.checkboxDrawerFilter .ant-checkbox + span {
+    padding-left: 10px;
+}
+
+.checkbox-drawer .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #625EFF;
+    border-color: #625EFF;
+}
+
+.checkbox-drawer .ant-checkbox-checked .ant-checkbox-inner::after {
+    transform: rotate(45deg) scale(0.8) translate(-80%, -50%);
+}
+
+.ant-space{
+    display: flex;
+}

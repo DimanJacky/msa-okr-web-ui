@@ -1,0 +1,41 @@
+.statusWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.figure {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.figureDraft {
+    background-color: #4696EC;
+}
+
+.figureReview {
+    background-color: #F5B53F;
+}
+
+.figureRejected {
+    background-color: #D63964;
+}
+
+.figureActive {
+    background-color: #4CAF50;
+}
+
+.figureOutdate {
+    background-color: #607D8B;
+}
+
+.figureDeleted {
+    background-color: #979797;
+}
+
+.statusText {
+    text-transform: capitalize;
+    margin: 0 0 0 4px;
+    color: #42436C;
+}

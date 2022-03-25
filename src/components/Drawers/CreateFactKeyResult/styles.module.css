@@ -1,0 +1,103 @@
+.collapse_list_facts {
+    display: flex;
+    justify-content: space-between;
+}
+.collapse {
+    margin-top: 40px;
+}
+.icon_minus {
+    color: #B3B3B3;
+    cursor: pointer;
+}
+.icon_plus {
+    color: #B3B3B3;
+    cursor: pointer;
+}
+.radio_block {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+}
+
+.facts_list {
+    margin-top: 20px;
+}
+.fact_logo{
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+.fact_value {
+    height: 20px;
+    background-color: #F2F1FB;
+    border-radius: 4px;
+    color: #7374B8;
+    margin-left: 12px;
+}
+.fact_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fact_info_detailed {
+    display: flex;
+    align-items: center;
+}
+.fact_info_additional {
+    display: flex;
+}
+.fact_info_period {
+    color: #B3B3B3
+}
+.fact_info_icon {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.fact_info_description {
+    color: #666666;
+    margin-top: 8px;
+}
+.fact_info_data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: #B3B3B3;
+}
+.author_name {
+    margin-left: 16px;
+}
+
+.textNotFound {
+    color: #6F6F8B;
+}
+
+.filterWrapper {
+    position: absolute;
+    top: 33px;
+    left: 112px;
+    z-index: 5;
+}
+
+.iconOutlined {
+    color: #7374B8;
+}
+.label_article {
+    color: #7B7B98;
+    font-size: 14px;
+}
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer_comments {
+    margin-bottom: 10px;
+}
+.footer_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.fact_description_container {
+    margin-top: 24px;
+}

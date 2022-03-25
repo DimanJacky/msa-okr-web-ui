@@ -1,0 +1,98 @@
+.ant-modal-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ant-modal {
+    position: absolute;
+    top: 104px;
+    right: 24px;
+    width: 422px;
+    height: 188px;
+}
+
+.ant-modal-header {
+    padding: 24px 50px 0 32px;
+    width: 382px;
+    height: 80px;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.ant-modal-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #42436C;
+}
+.ant-modal-close-x {
+    width: 40px;
+    font-size: 21px;
+}
+.ant-modal-close-x .anticon {
+    position: absolute;
+    top: 26px;
+    right: 22px;
+    display: inline-block;
+    color: #7B7B7B;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+}
+
+.ant-modal-close-x .anticon path {
+    width: 15px;
+    height: 15px;
+    color: #7B7B7B;
+}
+
+.ant-modal-body {
+    padding: 0;
+}
+.ant-modal-footer {
+    padding: 32px 0 36px 32px;
+    text-align: left;
+    background: transparent;
+    border-top: 0;
+}
+.ant-modal-footer .ant-btn {
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 10px;
+    background: #625EFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 16px;
+}
+.ant-modal-footer .ant-btn span {
+    color: #ffffff;
+}
+.ant-dropdown-trigger {
+    margin-left: 0;
+}
+.ant-modal-footer .ant-btn-primary {
+    background: #ffffff;
+    border: 1px solid #625EFF;
+}
+.ant-modal-footer .ant-btn-primary span{
+    color: #625EFF;
+}
+.ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.hidden-icons-style{
+    color: #7374B8;
+    font-size: 17px;
+}

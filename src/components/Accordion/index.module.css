@@ -1,0 +1,175 @@
+.site_accordion_wrapper {
+    padding: 0 56px;
+}
+
+.accordion {
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: white;
+}
+
+.accordion_item {
+    border-radius: 10px !important;
+    border: 1px solid #d9d9d9;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 5px 0;
+}
+.header_wrapper_title{
+    display: flex;
+    align-items: center;
+}
+.header_link{
+    margin-left: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+.alert_wrapper {
+    margin-top: 20px;
+}
+
+.header {
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    color: #333333;
+    flex: 1;
+}
+
+.table_header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #42436C;
+    margin-top: 18px;
+}
+
+.global_icon_style {
+    color: #42436C;
+    margin-right: 16px;
+    margin-top: 18px;
+}
+
+.global_icon_style img {
+    height: 18px;
+    width: 18px;
+}
+
+.global_icon_style :hover {
+    cursor: pointer;
+}
+
+.header_right_panel {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.header_partition {
+    height: 20px;
+    width: 1px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin: 0 30px;
+}
+
+
+.accordion_header_block {
+    flex: 3;
+    cursor: pointer;
+    padding: 12px 0 12px 66px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.thirdLevel {
+    flex: 3;
+    cursor: pointer;
+    padding: 15px 0 15px 88px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.icons_flag_style {
+    color: #7374B8;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    left: 68px;
+}
+
+.accordion_header_un {
+    flex: 3;
+    cursor: pointer;
+    padding: 12px 0 12px 56px;
+    color: #453C5C;
+    position: relative;
+}
+
+.description_field {
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.hidden_icons_style {
+    color: #7374B8;
+    font-size: 17px;
+}
+
+
+.testClass {
+    background-color: red !important;
+    font-size: 30px;
+}
+
+.secondTestClass {
+    border: 10px solid yellow;
+}
+
+
+.targetImg{
+    position: absolute;
+    left: 17px;
+    top: 16px;
+}
+
+.targetImgKr {
+    position: absolute;
+    left: 38px;
+    top: 17px;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_disable {
+    color: #7374B8;
+    font-size: 17px;
+    opacity: 0.3;
+}
